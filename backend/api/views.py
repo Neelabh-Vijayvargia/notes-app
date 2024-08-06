@@ -11,7 +11,6 @@ class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
-    pass
 
 class NoteListCreate(generics.ListCreateAPIView):
     # list all notes + create notes (2 functions)
